@@ -1,0 +1,485 @@
+.schedule {
+  padding: 0 15px;
+
+  .schedule__title {
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: 0;
+        width: 17px;
+        height: 1px;
+        background: #000000;
+    }
+  }
+
+  .schedule__schedule-cards {
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+
+    .schedule-cards__card {
+      position: relative;
+      width: 244px;
+      height: 370px;
+      border-radius: 2px;
+      padding: 45px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+
+      .card__title {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        width: 114px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 118px;
+        color: #ced9b5;
+        background: transparent;
+        z-index: 3;
+      }
+
+      .card__level {
+        position: relative;
+        margin-bottom: 5px;
+        padding-top: 45px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+        z-index: 5;
+      }
+
+      .card__class {
+        display: block;
+        position: relative;
+        padding-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+        z-index: 5;
+      }
+
+      .card__price {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+
+      .card__day {
+        margin-bottom: 18px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+
+      .card__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 36px;
+        width: 132px;
+        height: 30px;
+        color: #ffffff;
+
+        a {
+          display: block;
+          width: 132px;
+          height: 30px;
+          border-radius: 15px;
+          border: 2px white solid;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #ffffff;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+        .link__strike {
+          position: absolute;
+          top: 13px;
+          right: -17px; 
+          width: 35px;
+          height: 2px;
+          background: #ffffff;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: 0;
+            width: 8px;
+            height: 2px;
+            background: #ffffff;
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 0;
+            width: 8px;
+            height: 2px;
+            background: #ffffff;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .schedule-cards__card--1 {
+      background: #c8d4ac;
+    }
+
+    .schedule-cards__card--2 {
+      background: #b2c38a;
+
+      .card__title{
+        background: #bac996;
+      }
+    }
+
+    .schedule-cards__card--3 {
+      background: #9cb269;
+
+      .card__title{
+        background: #a6ba78;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1299px) {
+  .schedule {
+    padding: 0 62px;
+  
+    .schedule__title {
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      background: transparent;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 37px;
+        height: 2px;
+        font-size: 500;
+        background: #000000;
+      }
+    }
+  
+    .schedule__schedule-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 23px;
+  
+      .schedule-cards__card--1 {
+        background: #c8d4ac;
+      }
+  
+      .schedule-cards__card--2 {
+        background: #b2c38a;
+      }
+  
+      .schedule-cards__card--3 {
+        background: #9cb269;
+      }
+  
+      .schedule-cards__card {
+        position: relative;
+        width: 206px;
+        height: 370px;
+        padding: 0 20px;
+        margin-bottom: 85px;
+  
+        .card__title {
+          position: absolute;
+          top: 13px;
+          left: 50px;
+          font-weight: 900;
+          font-size: 114px;
+          line-height: 120px;
+          min-width: 130px;
+          min-height: 120px;
+          color: #ced9b5;
+          background: transparent;
+          z-index: 3;
+        }
+  
+        .card__level {
+          position: relative;
+          padding-top: 0;
+          margin-bottom: 5px;
+          margin-top: 80px;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: transparent;
+          z-index: 4;
+        }
+  
+        .card__class {
+            display: block;
+            position: relative;
+          margin-bottom: 15px;
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #ffffff;
+          z-index: 4;
+        }
+  
+        .card__price {
+            position: relative;
+          margin-bottom: 22px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          z-index: 4;
+        }
+  
+        .card__day {
+            display: block;
+          margin-bottom: 15px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+  
+        .card__link {
+          position: relative;
+          margin: 0 auto;
+          margin-top: 30px;
+          width: 132px;
+          height: 30px;
+  
+          a {
+            display: block;
+            width: 132px;
+            height: 30px;
+            border-radius: 15px;
+            border: 2px white solid;
+            box-sizing: border-box;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: middle;
+          }
+  
+          .link__strike {
+            position: absolute;
+            top: 13px;
+            right: -16px; 
+            width: 35px;
+            height: 2px;
+            background: #ffffff;
+  
+            &:before {
+              content: '';
+              position: absolute;
+              top: -2px;
+              right: 0;
+              width: 8px;
+              height: 2px;
+              background: #ffffff;
+              transform: rotate(45deg);
+            }
+  
+            &:after {
+              content: '';
+              position: absolute;
+              top: 2px;
+              right: 0;
+              width: 8px;
+              height: 2px;
+              background: #ffffff;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1300px) {
+    .schedule {
+        padding: 0 99px;
+
+        .schedule__title {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 50px;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 60px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 32px;
+                left: 0;
+                width: 37px;
+                height: 2px;
+                font-size: 500;
+                background: #000000;
+            }
+        }
+
+        .schedule__schedule-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 23px;
+
+            .schedule-cards__card--1 {
+                background: #c8d4ac;
+            }
+
+            .schedule-cards__card--2 {
+                background: #b2c38a;
+            }
+
+            .schedule-cards__card--3 {
+                background: #9cb269;
+            }
+
+            .schedule-cards__card {
+                position: relative;
+                width: 375px;
+                height: 596px;
+                padding: 0 75px;
+                margin-bottom: 135px;
+
+                .card__title {
+                    position: absolute;
+                    top: 130px;
+                    left: 92px;
+                    min-width: 250px;
+                    min-height: 200px;
+                    font-weight: 900;
+                    font-size: 200px;
+                    color: #ced9b5;
+                    background: transparent;
+                    z-index: 3;
+                }
+
+                .card__level {
+                    position: relative;
+                    padding-top: 0;
+                    margin-bottom: 10px;
+                    margin-top: 185px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    z-index: 5;
+                }
+
+                .card__class {
+                    position: relative;
+                    display: block;
+                    margin-bottom: 30px;
+                    font-weight: 500;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    z-index: 5;
+                }
+
+                .card__price {
+                    position: relative;
+                    display: block;
+                    margin-bottom: 38px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    z-index: 5;
+                }
+
+                .card__day {
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+                .card__link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    margin-top: 46px;
+                    width: 238px;
+                    height: 54px;
+
+                    a {
+                        display: block;
+                        width: 238px;
+                        height: 54px;
+                        border-radius: 27px;
+                        border: 2px white solid;
+                        box-sizing: border-box;
+                        font-size: 19px;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+
+                    .link__strike {
+                        position: absolute;
+                        top: 26px;
+                        right: -36px; 
+                        width: 72px;
+                        height: 2px;
+                        background: #ffffff;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: -2px;
+                            right: 0;
+                            width: 10px;
+                            height: 2px;
+                            background: #ffffff;
+                            transform: rotate(45deg);
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 2px;
+                            right: 0;
+                            width: 10px;
+                            height: 2px;
+                            background: #ffffff;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

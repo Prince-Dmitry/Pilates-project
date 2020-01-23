@@ -1,0 +1,510 @@
+.header {
+  position: relative;
+  padding: 13px 15px;
+  margin-bottom: 300px;
+
+  .header__logo-nav-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 333px;
+
+    .logo-nav-phone__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 290px;
+
+      .logo-nav-phone__logo-and-title {
+        display: flex;
+        flex-direction: column;
+
+        .header__logo {
+          padding-bottom: 0px;
+        }
+
+        .logo-and-title__title {
+          font-size: 7px;
+          line-height: 13px;
+          text-transform: uppercase;
+          color: #fefefe;
+        }
+      }
+
+      .logo-nav-phone__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 17px;
+        background: transparent;
+        cursor: pointer;
+
+        .nav__first-line {
+          display: inline-block;
+          vertical-align: top;
+          width: 10px;
+          height: 2px;
+          padding-bottom: 0px;
+          margin-bottom: 4px;
+          background: white;
+        }
+
+        .nav__second-line,
+        .nav__third-line {
+          display: inline-block;
+          vertical-align: top;
+          width: 17px;
+          height: 2px;
+          padding: 0px;
+          margin-bottom: 4px;
+          background: white;
+        }
+      }
+    }
+
+    .logo-nav-phone__phone {
+      display: none;
+    }
+  }
+
+  .header__description {
+    position: relative;
+    z-index: 11;
+    padding-top: 100px;
+
+    .description__title {
+      max-width: 180px;
+      padding-bottom: 28px;
+      font-size: 30px;
+      line-height: 38px;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: white;
+    }
+
+    .description__text {
+      display: none;
+    }
+
+    .description__link {
+      position: relative;
+
+      .link__schedule {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 156px;
+        height: 39px;
+        box-sizing: border-box;
+        border: 2px white solid;
+        border-radius: 17px;
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+        background: transparent;
+      }
+
+      .link__link-decoration {
+        position: absolute;
+        display: none;
+      }
+    }
+  }
+
+  .header__big-circle {
+    position: absolute;
+    top: -100px;
+    left: -30px;
+  }
+
+  .header__green-circle {
+    position: absolute;
+    top: 62px;
+    left: 341px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f1f4ea;
+  }
+  
+  .header__bagel-circle {
+    position: absolute;
+    top: 120px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f1f4ea;
+    z-index: 6;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #91aa59;
+      z-index: 10;
+    }
+  }
+
+  .header__woman {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1299px) {
+  .header {
+    padding: 13px 62px;
+    margin-bottom: 150px;
+
+    .header__logo-nav-phone {
+      width: 100%;
+
+      .logo-nav-phone__wrapper {
+        width: 333px;
+
+        .logo-nav-phone__logo-and-title {
+          img {
+            width: 50px;
+            height: 28px;
+          }
+
+          .logo-and-title__title {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+
+        .logo-nav-phone__nav {
+          width: 23px;
+          cursor: pointer;
+
+          .nav__first-line {
+            width: 14px;
+            margin-bottom: 6px;
+          }
+
+          .nav__second-line,
+          .nav__third-line {
+            width: 23px;
+            margin-bottom: 6px;
+          }
+        }
+      }
+
+      .logo-nav-phone__phone {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+      }
+    }
+
+    .header__description {
+      padding-top: 130px;
+
+      .description__title {
+        max-width: 270px;
+        padding-bottom: 60px;
+        font-size: 48px;
+        line-height: 72px;
+      }
+
+      .description__text {
+        display: block;
+        margin-bottom: 55px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+      }
+
+      .description__link {
+        position: relative;
+
+        .link__schedule {
+          width: 254px;
+          height: 55px;
+          border-radius: 28px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .link__link-decoration {
+          position: absolute;
+          top: 27px;
+          left: 215px;
+          display: inline-block;
+          vertical-align: top;
+          width: 70px;
+          height: 2px;
+          background: white;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 64px;
+            top: -1px;
+            width: 2px;
+            height: 15px;
+            background: white;
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            left: 64px;
+            top: -12px;
+            width: 2px;
+            height: 15px;
+            background: white;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .header__big-circle {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .header__green-circle {
+      top: 142px;
+      right: 75px;
+      width: 64px;
+      height: 64px;
+      background: #bdcc9b;
+    }
+    
+    .header__bagel-circle {
+      top: 50px;
+      right: -21px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #bdcc9b;
+      z-index: 6;
+  
+      &:before {
+        width: 50px;
+        height: 50px;
+        background: #ffffff;
+      }
+    }
+  
+    .header__woman {
+      top: 54px;
+      right: 0px;
+      width: 724px;
+      height: 630px;
+
+      img {
+        width: 724px;
+        height: 630px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1300px) {
+  .header {
+    padding: 30px 100px;
+    margin-bottom: 300px;
+
+    .header__logo-nav-phone {
+      width: 100%;
+      box-sizing: border-box;
+
+      .logo-nav-phone__wrapper {
+        width: 577px;
+        box-sizing: border-box;
+
+        .logo-nav-phone__logo-and-title {
+          .header__logo {
+            width: 62px;
+            height: 36px;
+            margin-bottom: 5px;
+
+            img {
+              width: 62px;
+              height: 36px;
+            }
+          }
+
+          .logo-and-title__title {
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        .logo-nav-phone__nav {
+          width: 23px;
+          cursor: pointer;
+
+          .nav__first-line {
+            width: 14px;
+            margin-bottom: 6px;
+          }
+
+          .nav__second-line,
+          .nav__third-line {
+            width: 23px;
+            margin-bottom: 6px;
+          }
+        }
+      }
+
+      .logo-nav-phone__phone {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+      }
+    }
+
+    .header__description {
+      width: 320px;
+      padding-top: 130px;
+
+      .description__title {
+        max-width: 310px;
+        padding-bottom: 40px;
+        font-size: 58px;
+        line-height: 72px;
+      }
+
+      .description__text {
+        display: block;
+        margin-bottom: 55px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+      }
+
+      .description__link {
+        position: relative;
+
+        .link__schedule {
+          width: 254px;
+          height: 55px;
+          border-radius: 28px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .link__link-decoration {
+          position: absolute;
+          top: 27px;
+          left: 215px;
+          display: inline-block;
+          vertical-align: top;
+          width: 70px;
+          height: 2px;
+          background: white;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 64px;
+            top: -1px;
+            width: 2px;
+            height: 15px;
+            background: white;
+            transform: rotate(45deg)
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            left: 64px;
+            top: -12px;
+            width: 2px;
+            height: 15px;
+            background: white;
+            transform: rotate(-45deg)
+          }
+        }
+      }
+    }
+
+    .header__big-circle {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 773px;
+      height: 785px;
+
+      img {
+        width: 773px;
+        height: 785px;
+      }
+    }
+
+    .header__green-circle {
+      position: absolute;
+      top: 117px;
+      left: 1200px;
+      width: 58px;
+      height: 58px;
+      background: #bdcc9b;
+    }
+    
+    .header__bagel-circle {
+      position: absolute;
+      top: 20px;
+      right: -21px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #bdcc9b;
+      z-index: 6;
+
+      &:before {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 42px;
+        height: 42px;
+        background: #ffffff;
+      }
+    }
+
+    .header__woman {
+      position: absolute;
+      top: 38px;
+      left: 400px;
+      width: 994px;
+      height: 776px;
+
+      img {
+        position: relative;
+        width: 994px;
+        height: 776px;
+        z-index: 6;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 130px;
+        left: 373px;
+        width: 453px;
+        height: 453px;
+        border-radius: 50%;
+        background: #bdcc9b;
+        z-index: 5;
+      }
+    }
+  }
+}

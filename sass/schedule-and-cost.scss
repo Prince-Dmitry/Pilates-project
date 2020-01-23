@@ -1,0 +1,427 @@
+.schedule {
+  padding: 0 15px;
+
+  .schedule__title {
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 17px;
+      height: 1px;
+      background: #000000;
+    }
+  }
+
+  .schedule__schedule-cards {
+    display: block;
+    padding: 23px;
+    margin: 0 auto;
+
+    .schedule-cards__card {
+      position: relative;
+      width: 244px;
+      height: 370px;
+      border-radius: 2px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      .card__title {
+        position: absolute;
+        top: 42px;
+        left: 70px;
+        font-size: 118px;
+        color: #ced9b5; 
+      }
+
+      .card__level {
+        margin-bottom: 5px;
+        margin-top: 100px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      .card__class {
+        margin-bottom: 21px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      .card__price {
+        margin-bottom: 27px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+
+      .card__day {
+        margin-bottom: 18px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+
+      .card__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 36px;
+        width: 132px;
+        height: 30px;
+        color: #ffffff;
+
+        a {
+          display: block;
+          width: 132px;
+          height: 30px;
+          border-radius: 15px;
+          border: 2px white solid;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #ffffff;
+        }
+
+        .link__strike {
+          position: absolute;
+          top: 13px;
+          right: 0; 
+          width: 35px;
+          height: 2px;
+          background: #ffffff;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 2px;
+            background: #ffffff;
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 2px;
+            background: #ffffff;
+            transform: uppercase(-45deg);
+          }
+        }
+      }
+    }
+
+    .schedule-cards__card--1 {
+      background: #c8d4ac;
+    }
+
+    .schedule-cards__card--2 {
+      background: #b2c38a;
+
+      .card__title{
+        background: #bac996;
+      }
+    }
+
+    .schedule-cards__card--3 {
+      background: #9cb269;
+
+      .card__title{
+        background: #a6ba78;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1299px) {
+  .schedule {
+    padding: 0 62px;
+  
+    .schedule__title {
+      position: relative;
+      padding-left: 27px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 37px;
+        height: 2px;
+        font-size: 500;
+        background: #000000;
+      }
+    }
+  
+    .schedule__schedule-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 23px;
+  
+      .schedule-cards__card--1 {
+        background: #c8d4ac;
+      }
+  
+      .schedule-cards__card--2 {
+        background: #b2c38a;
+      }
+  
+      .schedule-cards__card--3 {
+        background: #9cb269;
+      }
+  
+      .schedule-cards__card {
+        position: relative;
+        width: 206px;
+        height: 370px;
+        padding: 0 20px;
+        margin-bottom: 85px;
+  
+        .card__title {
+          position: absolute;
+          top: 42px;
+          left: 52px;
+          font-size: 114px;
+          color: #ced9b5; 
+        }
+  
+        .card__level {
+          margin-bottom: 5px;
+          margin-top: 100px;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+  
+        .card__class {
+          margin-bottom: 21px;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+  
+        .card__price {
+          margin-bottom: 27px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+  
+        .card__day {
+          margin-bottom: 18px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+  
+        .card__link {
+          position: relative;
+          margin-top: 36px;
+          width: 132px;
+          height: 30px;
+  
+          a {
+            display: block;
+            width: 132px;
+            height: 30px;
+            border-radius: 15px;
+            border: 2px white solid;
+            box-sizing: border-box;
+            font-size: 14px;
+          }
+  
+          .link__strike {
+            position: absolute;
+            top: 13px;
+            right: 0; 
+            width: 35px;
+            height: 2px;
+            background: #ffffff;
+  
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 8px;
+              height: 2px;
+              background: #ffffff;
+              transform: rotate(45deg);
+            }
+  
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 8px;
+              height: 2px;
+              background: #ffffff;
+              transform: uppercase(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1300px) {
+  .schedule {
+    padding: 0 99px;
+  
+    .schedule__title {
+      position: relative;
+      padding-left: 27px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 60px;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 37px;
+        height: 2px;
+        font-size: 500;
+        background: #000000;
+      }
+    }
+  
+    .schedule__schedule-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 23px;
+  
+      .schedule-cards__card--1 {
+        background: #c8d4ac;
+      }
+  
+      .schedule-cards__card--2 {
+        background: #b2c38a;
+      }
+  
+      .schedule-cards__card--3 {
+        background: #9cb269;
+      }
+  
+      .schedule-cards__card {
+        position: relative;
+        width: 375px;
+        height: 596px;
+        padding: 0 75px;
+        margin-bottom: 135px;
+  
+        .card__title {
+          position: absolute;
+          top: 95px;
+          left: 112px;
+          font-size: 200px;
+          color: #ced9b5; 
+        }
+  
+        .card__level {
+          margin-bottom: 8px;
+          margin-top: 185px;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+  
+        .card__class {
+          margin-bottom: 30px;
+          font-size: 28px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+  
+        .card__price {
+          margin-bottom: 38px;
+          font-size: 24px;
+          line-height: 30px;
+        }
+  
+        .card__day {
+          margin-bottom: 20px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+  
+        .card__link {
+          position: relative;
+          margin-top: 36px;
+          width: 238px;
+          height: 54px;
+  
+          a {
+            display: block;
+            width: 238px;
+            height: 54px;
+            border-radius: 27px;
+            border: 2px white solid;
+            box-sizing: border-box;
+            font-size: 14px;
+          }
+  
+          .link__strike {
+            position: absolute;
+            top: 13px;
+            right: 0; 
+            width: 72px;
+            height: 2px;
+            background: #ffffff;
+  
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 10px;
+              height: 2px;
+              background: #ffffff;
+              transform: rotate(45deg);
+            }
+  
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 10px;
+              height: 2px;
+              background: #ffffff;
+              transform: uppercase(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
